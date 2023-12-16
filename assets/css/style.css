@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    background: rgb(162, 162, 162);
+    background: linear-gradient(90deg, rgba(162, 162, 162, 1) 0%, rgba(98, 98, 98, 1) 52%, rgba(91, 91, 91, 1) 100%);
+    overflow: hidden;
+}
+
+body h1 {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-align: center;
+}
+
+.text h2 {
+    position: relative;
+    top: 10%;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-align: center;
+}
+
+.buttonYes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+    padding: 5% 10%;
+    border-radius: 999px;
+    background: var(--platform-aliases-shape-principal, #202024);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 14px 14px 0px rgba(0, 0, 0, 0.13), 0px 32px 19px 0px rgba(0, 0, 0, 0.08), 0px 57px 23px 0px rgba(0, 0, 0, 0.02), 0px 89px 25px 0px rgba(0, 0, 0, 0.00);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 4vw;
+    margin: 10% auto;
+}
+
+.buttonNo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+    padding: 5% 10%;
+    border-radius: 999px;
+    background: var(--platform-aliases-shape-principal, #202024);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 14px 14px 0px rgba(0, 0, 0, 0.13), 0px 32px 19px 0px rgba(0, 0, 0, 0.08), 0px 57px 23px 0px rgba(0, 0, 0, 0.02), 0px 89px 25px 0px rgba(0, 0, 0, 0.00);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 4vw;
+    margin: -25% auto;
+}
+
+
+@media (max-width: 768px) {
+    .text h2 {
+        top: 5%;
+    }
+
+    .buttonYes,
+    .buttonNo {
+        position: static;
+        width: 80%;
+        margin: 10% auto;
+    }
+
+    .buttonNo {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 769px) {
+    .buttonYes {
+        margin-left: 2%;
+    }
+
+    .buttonNo {
+        margin-right: 2%;
+    }
+}
